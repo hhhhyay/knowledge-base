@@ -24,7 +24,6 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - run: npm run install-plugins
       - run: npx quartz build -d content -o public
       - uses: actions/upload-pages-artifact@v4
         with:
